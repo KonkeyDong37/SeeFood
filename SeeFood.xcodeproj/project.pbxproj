@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A02F86425A364E100B13396 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A02F86325A364E100B13396 /* PictureViewController.swift */; };
 		8ACB7D8225A33D4B0078018B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB7D8125A33D4B0078018B /* AppDelegate.swift */; };
 		8ACB7D8425A33D4B0078018B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB7D8325A33D4B0078018B /* SceneDelegate.swift */; };
 		8ACB7D8625A33D4B0078018B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB7D8525A33D4B0078018B /* ViewController.swift */; };
 		8ACB7D8925A33D4B0078018B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ACB7D8725A33D4B0078018B /* Main.storyboard */; };
 		8ACB7D8B25A33D4B0078018B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ACB7D8A25A33D4B0078018B /* Assets.xcassets */; };
 		8ACB7D8E25A33D4B0078018B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ACB7D8C25A33D4B0078018B /* LaunchScreen.storyboard */; };
+		8ACB7D9725A344F20078018B /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8ACB7D9625A344F20078018B /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A02F86325A364E100B13396 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		8ACB7D7E25A33D4B0078018B /* SeeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ACB7D8125A33D4B0078018B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ACB7D8325A33D4B0078018B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8ACB7D8A25A33D4B0078018B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8ACB7D8D25A33D4B0078018B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8ACB7D8F25A33D4B0078018B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ACB7D9625A344F20078018B /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				8ACB7D8125A33D4B0078018B /* AppDelegate.swift */,
 				8ACB7D8325A33D4B0078018B /* SceneDelegate.swift */,
 				8ACB7D8525A33D4B0078018B /* ViewController.swift */,
+				8A02F86325A364E100B13396 /* PictureViewController.swift */,
 				8ACB7D8725A33D4B0078018B /* Main.storyboard */,
 				8ACB7D8A25A33D4B0078018B /* Assets.xcassets */,
 				8ACB7D8C25A33D4B0078018B /* LaunchScreen.storyboard */,
 				8ACB7D8F25A33D4B0078018B /* Info.plist */,
+				8ACB7D9625A344F20078018B /* Inceptionv3.mlmodel */,
 			);
 			path = SeeFood;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ACB7D8625A33D4B0078018B /* ViewController.swift in Sources */,
+				8ACB7D9725A344F20078018B /* Inceptionv3.mlmodel in Sources */,
 				8ACB7D8225A33D4B0078018B /* AppDelegate.swift in Sources */,
 				8ACB7D8425A33D4B0078018B /* SceneDelegate.swift in Sources */,
+				8A02F86425A364E100B13396 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WH34DMFD48;
 				INFOPLIST_FILE = SeeFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WH34DMFD48;
 				INFOPLIST_FILE = SeeFood/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
