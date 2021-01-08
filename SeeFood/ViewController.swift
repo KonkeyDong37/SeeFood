@@ -10,16 +10,13 @@ import UIKit
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     let imagePicker = UIImagePickerController()
-    var pictureVC: PictureViewController?
     var selectedPicture: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pictureVC = PictureViewController()
-        
         imagePicker.delegate = self
-        imagePicker.sourceType = .photoLibrary
+        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
     }
 

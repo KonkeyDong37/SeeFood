@@ -41,7 +41,7 @@ class PictureViewController: UIViewController {
         guard let model: VNCoreMLModel = {
             do {
                 let config = MLModelConfiguration()
-                return try VNCoreMLModel(for: Inceptionv3(configuration: config).model)
+                return try VNCoreMLModel(for: HotdogClassifier(configuration: config).model)
             }
             catch {
                 print(error)
@@ -57,7 +57,7 @@ class PictureViewController: UIViewController {
             }
             
             if let firstResult = result.first {
-                if firstResult.identifier.contains("hotdog") {
+                if firstResult.identifier.contains("Hotdog") {
                     self.titleLabel.text = "Hotdog!"
                     self.imageView.layer.borderColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
                 } else {
